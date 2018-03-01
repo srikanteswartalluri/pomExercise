@@ -1,15 +1,13 @@
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class MobileTestsIOS {
+public class MobileTestsIOSApp {
     public static void main(String[] args) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -21,7 +19,7 @@ public class MobileTestsIOS {
         capabilities.setCapability("platformVersion", "11.0");
        // capabilities.setCapability("udid", "C02KG0VMDRVF");
         //capabilities.setCapability("browserName", "Safari");
-        capabilities.setCapability("bundleId","com.apple.reminders");
+        capabilities.setCapability("app","/Users/talluri/Downloads/WordPressSample.ipa");
 
         capabilities.setCapability("fullReset", "true");
         WebDriver driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);

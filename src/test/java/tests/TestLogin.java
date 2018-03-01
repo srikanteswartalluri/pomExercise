@@ -46,7 +46,7 @@ public class TestLogin {
 
     @DataProvider
     public Object[][] excelData(){
-        Object[][] testData = getExcelData("/Users/stalluri/Downloads/Capabilities-new.xls" ,"Sheet1");
+        Object[][] testData = {};//getExcelData("/Users/stalluri/Downloads/Capabilities-new.xls" ,"Sheet1");
         return testData;
     }
 
