@@ -8,7 +8,7 @@ public class ExceptionExample {
                 System.out.println(10 / i);
 
                 Integer.parseInt("a");
-                //getValue("t");
+                getValue("t");
                 //if you want above statement to  cause exception and fail the program
                 //you have to catch specific exception for divide by zero and leave number format exception
                 //don't catch Exception-> which is a broad one
